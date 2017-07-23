@@ -1,9 +1,8 @@
 "use strict";
 
-var theVal = 0;
-// 
-theVal = 1;
-// 
-if (theVal > 0) {
-	console.log("Hello!");
+var a = {'moo':'too'};
+function foo(a) {
+	a = {'too':'moo'};
 }
+foo(a);
+console.log(a);
