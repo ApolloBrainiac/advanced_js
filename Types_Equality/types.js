@@ -20,5 +20,25 @@ declared
 
 */
 
-var a;
-console.log(a);
+
+
+// What is the difference between == (equality) and === (strict equality)?
+//  with == type cooersion
+0 === 0
+
+// true
+
+0 !== 1
+
+// true
+
+0 == 0
+// true
+
+'' == '0'
+// false
+
+0 == ''
+// true
+
+0 == '0' //true
