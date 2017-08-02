@@ -1,8 +1,29 @@
 "use strict";
 
-foo();
+// What is the scope chain?
+// Defined by the way the program is written
 
-var foo = function () {
-	var a = 1;
-	console.log(a)
+// function foo(){
+// 	console.log(myvar);
+// }
+
+// function goo(){
+// 	var myvar = 1;
+// 	foo();
+// }
+
+
+// goo();
+
+
+
+function goo(){
+	var myvar = 1;
+	function foo(){
+	console.log(myvar);
 }
+	foo();
+}
+
+
+goo();
