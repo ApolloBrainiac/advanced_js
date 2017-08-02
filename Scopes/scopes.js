@@ -1,29 +1,8 @@
 "use strict";
 
-// What is the scope chain?
-// Defined by the way the program is written
-
-// function foo(){
-// 	console.log(myvar);
-// }
-
-// function goo(){
-// 	var myvar = 1;
-// 	foo();
-// }
-
-
-// goo();
-
-
-
-function goo(){
-	var myvar = 1;
-	function foo(){
-	console.log(myvar);
-}
-	foo();
-}
-
-
-goo();
+// What is an IIFE(iffy) Immediatly Invoked Feunction Expression
+// and why might you use it?
+(function(){
+	var thing = {'hello':'main'};
+	console.log("main: ", thing);
+})();
