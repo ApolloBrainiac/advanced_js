@@ -1,16 +1,8 @@
 "use strict";
 
-// What are the different scopes in JavaScript
+foo();
 
-var asim = 1; //global variable
-
-window.moo = 1;
-
-// window for browsers, global for node
-
-function moo() { //local variable
-	var foo = 1;
-	console.log(foo);
-};
-
-// JS does not have block-level scope
+var foo = function () {
+	var a = 1;
+	console.log(a)
+}
