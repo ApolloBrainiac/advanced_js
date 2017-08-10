@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 
 // console.log(this);
 
@@ -16,14 +16,16 @@
 
 var asim = {
 	checkThis: function(){
-		console.log(this);
+		var self = this;
+		console.log(self);
 		function checkOther(){
-			this.moo = 1;
-			console.log(this);
+			self.moo = 1;
+			console.log(self);
 		}
 		
 		checkOther();
-		console.log(this.moo);
+		console.log(self.moo);
+		console.log(window.moo);
 	}
 };
 
